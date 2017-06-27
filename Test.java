@@ -3,26 +3,28 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pkginterface;
+package Interface;
 
 /**
  *
  * @author MRuser
  */
 public class Test {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-        Accounts a;
-        a=new SavingAccount();
-        a.dipposit();
-        a.withdraw();
-        a=new CurrentAccount();
-        a.dipposit();
-        a.withdraw();
+    public static void main(String []args){
+        Flyer f;
+        Bird b = new Bird();
+        Aeroplane a = new Aeroplane();
+        f =new Bird();
+        f.fly();
+        f.landing();
+        f.takeoff();
+        b.FoodHabbit();
+        System.out.println();
+        f= new Aeroplane();
+        f.fly();
+        f.landing();
+        f.takeoff();
+        a.Type();
+        }
     }
-    
-}
+
